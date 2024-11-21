@@ -93,7 +93,7 @@ const SideBar = () => {
                         ✕
                     </button>
 
-                   
+
                     <div className="flex justify-between mb-5">
                         <button className="border border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white rounded p-2 w-24 text-sm font-medium">
                             <Link to="/login"> Login</Link>

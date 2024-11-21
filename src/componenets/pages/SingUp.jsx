@@ -18,10 +18,8 @@ const SignUp = ({ setIsAuthenticated }) => {
             console.log("Error during sign up:", error);
         }
     };
-
     return (
         <>
-
             <div className="min-h-screen flex flex-col items-center justify-center">
                 <span className='text-4xl font-bold mb-10 text-cyan-700'>ShopFusion</span>
 
@@ -85,7 +83,7 @@ const SignUp = ({ setIsAuthenticated }) => {
                         </button>
                     </form>
 
-                    
+
                     <div className="mt-4 text-center">
                         <p>Already have an account?
                             <Link to="/login" className="text-blue-500 hover:underline ml-2">

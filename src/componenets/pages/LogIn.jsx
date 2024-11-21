@@ -32,19 +32,14 @@ const Login = ({ setAuthanticate }) => {
             {/* Account Dropdown */}
             <div className="absolute top-4 right-4">
                 <div className="relative">
-                    {/* <button className="bg-gray-800 text-white py-2 px-4 rounded">
-                        Account
-                    </button> */}
+                    
                     <div className="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg z-10">
                         <Link to="/login">
-                            {/* <button className="block px-4 py-2 text-left text-gray-800 hover:bg-gray-100 w-full">
-                                Login
-                            </button> */}
+                             
                         </Link>
                         <Link to="/signup">
-                            {/* <button className="block px-4 py-2 text-left text-gray-800 hover:bg-gray-100 w-full">
-                                Signup
-                            </button> */}
+                           
+                            
                         </Link>
                     </div>
                 </div>
