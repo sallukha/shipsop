@@ -2,11 +2,9 @@ import axios from 'axios';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
-
 const SignUp = ({ setIsAuthenticated }) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate();
-
     const onSubmit = async (data) => {
         try {
             const response = await axios.post("http://localhost:3000/sing_up", data);

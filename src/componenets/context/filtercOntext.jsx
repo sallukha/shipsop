@@ -1,16 +1,11 @@
 import { createContext, useContext, useState } from "react";
-
-
 const FilterContext = createContext();
-
 const FilterProvider = ({ children }) => {
-
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(0);
     const [keyWord, setKeyWord] = useState("");
-
     return (
         // Provide all state and setters to the context
         <FilterContext.Provider

@@ -15,14 +15,10 @@ const ProductDetail = () => {
     return (
         <div className="container mx-auto p-6 max-w-lg bg-white shadow-lg rounded-lg mt-20 md:mt-10 md:max-w-2xl lg:max-w-3xl transition-all">
             <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">{product.title}</h2>
-
             <div className="flex flex-col md:flex-row gap-6">
-
                 <div className="w-full md:w-1/2 flex justify-center">
                     <img src={product.thumbnail} alt={product.title} className="w-full h-64 object-cover rounded-lg mb-4" />
                 </div>
-
-
                 <div className="w-full md:w-1/2 flex flex-col">
 
                     <div className="flex items-center mb-2">
@@ -31,12 +27,8 @@ const ProductDetail = () => {
                         ))}
                         <span className="text-gray-500 ml-2">({product.rating} / 5)</span>
                     </div>
-
-
                     <p className="text-lg font-bold text-blue-600">${product.price}</p>
                     <p className="text-gray-600 mt-2 mb-4">{product.description}</p>
-
-
                 </div>
             </div>
 

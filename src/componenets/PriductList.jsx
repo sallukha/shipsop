@@ -3,7 +3,7 @@ import axios from 'axios';
 import ReactPaginate from 'react-paginate';
 import CartList from './CartList';
 import { useNavigate } from 'react-router-dom';
-import { useFilter } from './context/filterContext';
+import { useFilter } from './context/filtercOntext';
 import { Tally3 } from 'lucide-react';
 
 const Navbar = () => {
@@ -59,7 +59,6 @@ const Navbar = () => {
 
         return filteredProducts;
     };
-
     const offset = currentPage * itemsPerPage;
     const filteredProducts = getFilteredProducts();
     const currentProducts = filteredProducts.slice(offset, offset + itemsPerPage);
@@ -156,7 +155,6 @@ const Navbar = () => {
                     </div>
                 ))}
             </div>
-
             <div className="flex justify-center mt-6">
                 <ReactPaginate
                     previousLabel={'Previous'}
