@@ -1,10 +1,8 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-
 const CartList = ({ cart, handleIncrement, handleDecrement, totalPrice, clearCart }) => {
     const [isProcessing, setIsProcessing] = useState(false); // Track payment status
     const [isRazorpayLoaded, setIsRazorpayLoaded] = useState(false);
-
     useEffect(() => {
         if (window.Razorpay) {
             setIsRazorpayLoaded(true);
@@ -16,13 +14,11 @@ const CartList = ({ cart, handleIncrement, handleDecrement, totalPrice, clearCar
             document.body.appendChild(script);
         }
     }, []);
-
     const handleClickPayment = async () => {
         if (isProcessing || !isRazorpayLoaded) {
             alert('Payment system not ready. Please try again.');
             return;
         }
-
         setIsProcessing(true); // Disable the button while processing
         try {
             const res = await axios.post('http://localhost:5000/payment/checkout', {

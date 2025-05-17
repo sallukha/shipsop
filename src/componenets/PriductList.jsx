@@ -91,7 +91,6 @@ const Navbar = () => {
             )
         );
     };
-
     const handleDecrement = (productId) => {
         setCart(prevCart =>
             prevCart.map(item =>

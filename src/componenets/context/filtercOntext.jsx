@@ -7,7 +7,6 @@ const FilterProvider = ({ children }) => {
     const [maxPrice, setMaxPrice] = useState(0);
     const [keyWord, setKeyWord] = useState("");
     return (
-        // Provide all state and setters to the context
         <FilterContext.Provider
             value={{
                 searchQuery,
@@ -33,5 +32,4 @@ export const useFilter = () => {
     }
     return context;
 };
-
 export default FilterProvider;
